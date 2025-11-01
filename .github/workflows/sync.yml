@@ -40,6 +40,7 @@ jobs:
         target_repo_token: ${{ secrets.GITHUB_TOKEN }}
         upstream_sync_branch: main
         upstream_sync_repo: cijhho123/cicada3301
+        shallow_since: 10
 
         # Set test_mode true during manual dispatch to run tests instead of the true action!!
         test_mode: ${{ inputs.sync_test_mode }}
